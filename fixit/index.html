@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="2026-10-20T14:11:17.788Z" name="download_date">
+   <meta content="width=device-width, initial-scale=1" name="viewport"/>
+   <link as="image" href="__l5e/assets-v1/8a1df367-9a5d-478b-810d-9a704f38d759/hero.jpg" rel="preload"/>
+   <link data-precedence="default" href="/assets/styles-D-qDbzFx.css" rel="stylesheet"/>
+   <!-- <link data-precedence="default" href="../_external/fonts.googleapis.com/css2.family_Bricolage_Grotesque_opsz_wght_12..96_500_12..96_700_12..96_800_family_DM_Sans_wght_400_500_600_700_display_swap.css" rel="stylesheet"/> -->
+   <title>
+    FixIt — Something broken? Let's fix it.
+   </title>
+   <meta content="#1f4a32" name="theme-color"/>
+   <meta content="Find trusted repair experts for phones, bicycles, appliances, bags and furniture. Compare offers, book doorstep pickup and get itemised digital bills." name="description"/>
+   <meta content="FixIt — Something broken? Let's fix it." property="og:title"/>
+   <meta content="Don't replace it. Fix it. India's smart repair marketplace." property="og:description"/>
+   <meta content="website" property="og:type"/>
+   <meta content="summary_large_image" name="twitter:card"/>
+   <link href="/assets/index-BDPYSxts.js" rel="modulepreload"/>
+   <link href="/assets/link-S7LRuTfm.js" rel="modulepreload"/>
+   <link href="/assets/button-DxFGN_-f.js" rel="modulepreload"/>
+   <link href="/assets/routes-Gls2qw7N.js" rel="modulepreload"/>
+
+   <link href="/assets/fixit-favicon.svg" rel="icon" type="image/x-icon"/>
+   <link href="https://fonts.googleapis.com/" rel="preconnect"/>
+   <link crossorigin="anonymous" href="https://fonts.gstatic.com/" rel="preconnect"/>
+   <!-- Styles for the embedded Lovable badge. Main site styling is loaded from the external CSS bundle. -->
+   <style>
+    #lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+		transition: opacity var(--badge-transition-duration) var(--badge-transition-easing);
+	}
+
+	#lovable-badge.closing {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: baseline;
+		gap: var(--badge-gap);
+		box-sizing: border-box;
+		padding: 4px var(--badge-padding) 0;
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	/* The wordmark baseline sits at y=12 of the 16px logo; an empty 12px box
+	   makes that the flex baseline so the text aligns to it on any system font. */
+	#lovable-badge-logo {
+		position: relative;
+		display: block;
+		width: 52px;
+		height: 12px;
+	}
+
+	#lovable-badge-logo svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge,
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+   </style>
+   <!-- <script data-proxy-url="/~api/analytics" defer="" src="/flock-11qk6ba.js"> -->
+   <!-- </script> -->
+   <!-- <script data-artifact-id="1e9d6b93a279044f4eda959241d68541794ddf512d6b53a9d531bde4a143078a" data-artifact-kind="dwl_content_hash" data-commit-sha="985de20e6fd6d65ddfe140331bd0dc5732e482ad" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF8xNHhjNjg5emYzOHltYmpkN3k3M3NzamFrNCIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiIxZTlkNmI5M2EyNzkwNDRmNGVkYTk1OTI0MWQ2ODU0MTc5NGRkZjUxMmQ2YjUzYTlkNTMxYmRlNGExNDMwNzhhIiwiY29tbWl0X3NoYSI6Ijk4NWRlMjBlNmZkNmQ2NWRkZmUxNDAzMzFiZDBkYzU3MzJlNDgyYWQiLCJleHAiOjE3OTUwOTc0Nzl9._ngFLDauiwcE3vnISX90a_TJOtrGP9kOCT0x_ozJKx4" defer="" src="__l5e/events.4d3abd1f6b7321c2.js"> -->
+   <!-- </script> -->
+   <meta content="FixIt — Something broken? Let&amp;#x27;s fix it." name="twitter:title"/>
+   <meta content="Don&amp;#x27;t replace it. Fix it. India&amp;#x27;s smart repair marketplace." name="twitter:description"/>
+   <meta content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_14xc689zf38ymbjd7y73ssjak4/9cef6076695f346f5f5a270a86f939d0_1792489335301.png" property="og:image"/>
+   <meta content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_14xc689zf38ymbjd7y73ssjak4/9cef6076695f346f5f5a270a86f939d0_1792489335301.png" name="twitter:image"/>
+  </meta>
+ </head>
+ <body>
+  <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-lime focus:px-4 focus:py-2" href="index.html">
+   Skip to content
+  </a>
+  <!-- Site header: brand, primary navigation, notifications, and sign-in actions. -->
+  <header class="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-lg">
+   <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4">
+    <a aria-current="page" aria-label="FixIt home" class="active" data-status="active" href="index.html">
+     <span class="flex items-center gap-2 font-display text-xl font-extrabold text-forest">
+      <span class="grid h-9 w-9 place-items-center rounded-xl bg-lime text-lime-foreground shadow-card">
+       <svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24">
+        <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z">
+        </path>
+       </svg>
+      </span>
+      FixIt
+     </span>
+    </a>
+    <nav aria-label="Main" class="hidden items-center gap-1 lg:flex">
+     <!-- <a aria-current="page" class="rounded-full px-3 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-forest bg-secondary text-forest font-semibold" data-status="active" href="index.html"> -->
+     
+		<a aria-current="page" class="rounded-full px-3 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-forest bg-secondary text-forest font-semibold" data-status="active" href="index.html">
+			Home
+     </a>
+     <a class="rounded-full px-3 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-forest" href="request.html">
+      Find a Repair
+     </a>
+     <a class="rounded-full px-3 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-forest" href="experts.html">
+      Experts
+     </a>
+     <a class="rounded-full px-3 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-forest" href="how-it-works.html">
+      How It Works
+     </a>
+     <a class="rounded-full px-3 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-forest" href="my-repairs.html">
+      My Repairs
+     </a>
+     <a class="rounded-full px-3 py-2 text-sm font-medium text-foreground/80 transition hover:bg-secondary hover:text-forest" href="become-expert.html">
+      Become an Expert
+     </a>
+    </nav>
+    <div class="flex items-center gap-2">
+     <button aria-expanded="false" aria-haspopup="dialog" aria-label="Notifications, 3 unread" class="relative grid h-10 w-10 place-items-center rounded-full hover:bg-secondary" data-state="closed" type="button">
+      <svg aria-hidden="true" class="lucide lucide-bell h-5 w-5 text-forest" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M10.268 21a2 2 0 0 0 3.464 0">
+       </path>
+       <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
+       </path>
+      </svg>
+      <span class="absolute right-1.5 top-1.5 grid h-4 min-w-4 place-items-center rounded-full bg-lime px-1 text-[10px] font-bold text-lime-foreground">
+       3
+      </span>
+     </button>
+     <a class="items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.97] [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary/20 bg-card text-foreground hover:border-primary hover:bg-secondary h-9 px-4 text-xs hidden sm:inline-flex" href="sign-in.html">
+      Customer
+       
+      demo · Switch
+     </a>
+     <a class="items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.97] [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-forest shadow-card h-9 px-4 text-xs hidden sm:inline-flex" href="sign-in.html">
+      Sign In
+     </a>
+     <button aria-expanded="false" aria-label="Menu" class="grid h-10 w-10 place-items-center rounded-full hover:bg-secondary lg:hidden">
+      <svg aria-hidden="true" class="lucide lucide-menu h-5 w-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M4 5h16">
+       </path>
+       <path d="M4 12h16">
+       </path>
+       <path d="M4 19h16">
+       </path>
+      </svg>
+     </button>
+    </div>
+   </div>
+  </header>
+  <main class="min-h-[70vh]" id="main">
+   <!--$-->
+   <!-- Hero section: main headline, repair calls to action, and image carousel. -->
+   <section class="dotted-bg relative overflow-hidden">
+    <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-10 md:grid-cols-2 md:pt-16">
+     <div class="animate-rise">
+      <span class="inline-flex items-center gap-2 rounded-full bg-secondary px-3 py-1 text-xs font-bold text-primary">
+       <svg aria-hidden="true" class="lucide lucide-leaf h-3.5 w-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z">
+        </path>
+        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12">
+        </path>
+       </svg>
+       Don't replace it. Fix it.
+      </span>
+      <h1 class="mt-5 text-5xl font-extrabold leading-[0.95] text-forest sm:text-6xl lg:text-7xl">
+       Something broken?
+       <br/>
+       <span class="relative inline-block">
+        Let's fix it.
+        <svg aria-hidden="true" class="absolute -bottom-2 left-0 w-full text-lime" preserveaspectratio="none" viewbox="0 0 300 12">
+         <path d="M2 9 Q150 -2 298 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="6">
+         </path>
+        </svg>
+       </span>
+      </h1>
+      <p class="mt-6 max-w-lg text-lg text-muted-foreground">
+       From phones and bicycles to home appliances and everyday essentials, find trusted experts, compare prices, and get your belongings repaired without the hassle.
+      </p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+       <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.97] [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-forest shadow-card h-13 px-7 text-base py-3.5" href="request.html">
+        Find My Repair
+        <svg aria-hidden="true" class="lucide lucide-arrow-right" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M5 12h14">
+         </path>
+         <path d="m12 5 7 7-7 7">
+         </path>
+        </svg>
+       </a>
+       <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.97] [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-lime text-lime-foreground hover:brightness-95 shadow-card h-13 px-7 text-base py-3.5" href="quick-fix.html">
+        <svg aria-hidden="true" class="lucide lucide-zap" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+         </path>
+        </svg>
+        Get a Quick Fix
+       </a>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
+       <span class="flex items-center gap-1.5">
+        <svg aria-hidden="true" class="lucide lucide-circle-check h-4 w-4 text-primary" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <circle cx="12" cy="12" r="10">
+         </circle>
+         <path d="m9 12 2 2 4-4">
+         </path>
+        </svg>
+        Approve every price change
+       </span>
+       <span class="flex items-center gap-1.5">
+        <svg aria-hidden="true" class="lucide lucide-circle-check h-4 w-4 text-primary" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <circle cx="12" cy="12" r="10">
+         </circle>
+         <path d="m9 12 2 2 4-4">
+         </path>
+        </svg>
+        Itemised digital bill
+       </span>
+      </div>
+     </div>
+     <div class="relative">
+      <div class="relative aspect-[5/4] overflow-hidden rounded-[2rem] border-4 border-card bg-cream shadow-lift">
+       <div class="flex h-full transition-transform duration-700 ease-[cubic-bezier(0.7,0,0.2,1)]" style="transform:translateX(-0%)">
+        <div class="relative h-full w-full shrink-0 overflow-hidden">
+         <img alt="Phones, cycles, fans &amp; bags — all fixed by local experts" class="h-full w-full object-cover animate-kenburns" height="1024" loading="eager" src="__l5e/assets-v1/8a1df367-9a5d-478b-810d-9a704f38d759/hero.jpg" width="1280"/>
+        </div>
+        <div class="relative h-full w-full shrink-0 overflow-hidden">
+         <img alt="Doorstep pickup &amp; return by local delivery partners" class="h-full w-full object-cover" height="1024" loading="lazy" src="__l5e/assets-v1/fa71430f-4b62-43b0-a2ce-f4ffe3b1697d/pickup.jpg" width="1280"/>
+        </div>
+        <div class="relative h-full w-full shrink-0 overflow-hidden">
+         <img alt="Appliances and laptops repaired at home or in-shop" class="h-full w-full object-cover" height="1024" loading="lazy" src="assets/appliance-DDrk-byw.jpg" width="1280"/>
+        </div>
+        <div class="relative h-full w-full shrink-0 overflow-hidden">
+         <img alt="Back to you with an itemised digital bill" class="h-full w-full object-cover" height="1024" loading="lazy" src="assets/delivered-DoGhwDsO.jpg" width="1280"/>
+        </div>
+       </div>
+       <div class="absolute inset-x-3 bottom-3 rounded-2xl bg-forest/90 p-3 text-forest-foreground backdrop-blur sm:inset-x-4 sm:bottom-4 sm:p-4">
+        <p class="animate-rise text-sm font-semibold sm:text-base">
+         <span class="mr-2 rounded-full bg-lime px-2 py-0.5 text-[11px] font-bold uppercase text-lime-foreground">
+          Expert repairs
+         </span>
+         Phones, cycles, fans &amp; bags — all fixed by local experts
+        </p>
+        <div class="mt-3 flex gap-1.5">
+         <button aria-label="Show slide 1" class="h-1.5 flex-1 overflow-hidden rounded-full bg-forest-foreground/25">
+          <span class="block h-full animate-progress rounded-full bg-lime">
+          </span>
+         </button>
+         <button aria-label="Show slide 2" class="h-1.5 flex-1 overflow-hidden rounded-full bg-forest-foreground/25">
+         </button>
+         <button aria-label="Show slide 3" class="h-1.5 flex-1 overflow-hidden rounded-full bg-forest-foreground/25">
+         </button>
+         <button aria-label="Show slide 4" class="h-1.5 flex-1 overflow-hidden rounded-full bg-forest-foreground/25">
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="absolute -left-4 top-8 hidden animate-float rounded-2xl bg-card p-3 shadow-lift sm:block">
+       <p class="text-xs text-muted-foreground">
+        Avg. saving vs new
+       </p>
+       <p class="font-display text-2xl font-extrabold text-primary">
+        68%
+       </p>
+      </div>
+      <div class="absolute -right-3 top-1/3 hidden animate-float rounded-2xl bg-lime p-3 text-lime-foreground shadow-lift sm:block" style="animation-delay:1.5s">
+       <p class="font-display text-lg font-extrabold">
+        4.8★
+       </p>
+       <p class="text-xs">
+        demo expert avg.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="overflow-hidden border-y bg-forest py-3 text-forest-foreground">
+     <div class="flex w-max animate-marquee gap-10 whitespace-nowrap font-display text-lg font-bold">
+      <span class="flex items-center gap-10">
+		Cracked screens
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Slipping chains
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Stuck zips
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Noisy fans
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Wobbly chairs
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Dead chargers
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Flat tyres
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Torn straps
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Cracked screens
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Slipping chains
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Stuck zips
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Noisy fans
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Wobbly chairs
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Dead chargers
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Flat tyres
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+      <span class="flex items-center gap-10">
+       Torn straps
+        
+       <span class="text-lime">
+        ✦
+       </span>
+      </span>
+     </div>
+    </div>
+   </section>
+   <!-- Repair categories: links customers to the repair-request flow. -->
+   
+ 
+<!--  
+   <section class="mx-auto max-w-7xl px-4 py-20">
+    <div class="reveal" data-shown="false" style="transition-delay:0ms">
+     <h2 class="text-3xl font-extrabold text-forest sm:text-4xl">
+      Popular repair categories
+     </h2>
+    </div>
+    <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+     <div class="reveal" data-shown="false" style="transition-delay:0ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-smartphone h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <rect height="20" rx="2" ry="2" width="14" x="5" y="2">
+         </rect>
+         <path d="M12 18h.01">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Electronics
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Phones, laptops, audio &amp; TVs
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:60ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-bike h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <circle cx="18.5" cy="17.5" r="3.5">
+         </circle>
+         <circle cx="5.5" cy="17.5" r="3.5">
+         </circle>
+         <circle cx="15" cy="5" r="1">
+         </circle>
+         <path d="M12 17.5V14l-3-3 4-3 2 3h2">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Cycles &amp; Mobility
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Bicycles, brakes, tyres, chains
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:120ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-washing-machine h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M3 6h3">
+         </path>
+         <path d="M17 6h.01">
+         </path>
+         <rect height="20" rx="2" width="18" x="3" y="2">
+         </rect>
+         <circle cx="12" cy="13" r="5">
+         </circle>
+         <path d="M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Home Appliances
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Fans, mixers, irons, washers
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:180ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-shirt h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Clothing &amp; Bags
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Zips, stitching, straps, patches
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:240ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-armchair h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3">
+         </path>
+         <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z">
+         </path>
+         <path d="M5 18v2">
+         </path>
+         <path d="M19 18v2">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Furniture
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Chairs, tables, drawers
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:300ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-sparkles h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+         </path>
+         <path d="M20 2v4">
+         </path>
+         <path d="M22 4h-4">
+         </path>
+         <circle cx="4" cy="20" r="2">
+         </circle>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Other Items
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Tell us — we'll find someone
+       </p>
+      </a>
+     </div>
+    </div>
+   </section>
+
+
+
+   <section class="mx-auto max-w-7xl px-4 py-20">
+    <div class="reveal" data-shown="false" style="transition-delay:0ms">
+     <h2 class="text-3xl font-extrabold text-forest sm:text-4xl">
+      Popular repair categories
+     </h2>
+    </div>
+    <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+     <div class="reveal" data-shown="false" style="transition-delay:0ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-smartphone h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <rect height="20" rx="2" ry="2" width="14" x="5" y="2">
+         </rect>
+         <path d="M12 18h.01">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Electronics
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Phones, laptops, audio &amp; TVs
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:60ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-bike h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <circle cx="18.5" cy="17.5" r="3.5">
+         </circle>
+         <circle cx="5.5" cy="17.5" r="3.5">
+         </circle>
+         <circle cx="15" cy="5" r="1">
+         </circle>
+         <path d="M12 17.5V14l-3-3 4-3 2 3h2">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Cycles &amp; Mobility
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Bicycles, brakes, tyres, chains
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:120ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-washing-machine h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M3 6h3">
+         </path>
+         <path d="M17 6h.01">
+         </path>
+         <rect height="20" rx="2" width="18" x="3" y="2">
+         </rect>
+         <circle cx="12" cy="13" r="5">
+         </circle>
+         <path d="M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Home Appliances
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Fans, mixers, irons, washers
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:180ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-shirt h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Clothing &amp; Bags
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Zips, stitching, straps, patches
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:240ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-armchair h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3">
+         </path>
+         <path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z">
+         </path>
+         <path d="M5 18v2">
+         </path>
+         <path d="M19 18v2">
+         </path>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Furniture
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Chairs, tables, drawers
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:300ms">
+      <a class="card-lift group block h-full rounded-3xl border bg-card p-5 shadow-card" href="request.html">
+       <span class="grid h-12 w-12 place-items-center rounded-2xl bg-secondary text-primary transition group-hover:bg-lime group-hover:text-lime-foreground group-hover:rotate-6">
+        <svg aria-hidden="true" class="lucide lucide-sparkles h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+         </path>
+         <path d="M20 2v4">
+         </path>
+         <path d="M22 4h-4">
+         </path>
+         <circle cx="4" cy="20" r="2">
+         </circle>
+        </svg>
+       </span>
+       <p class="mt-4 font-display font-bold text-forest">
+        Other Items
+       </p>
+       <p class="text-xs text-muted-foreground">
+        Tell us — we'll find someone
+       </p>
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="bg-secondary/60 py-20">
+    <div class="mx-auto max-w-7xl px-4">
+     <div class="reveal" data-shown="false" style="transition-delay:0ms">
+      <h2 class="text-3xl font-extrabold text-forest sm:text-4xl">
+       How FixIt works
+      </h2>
+     </div>
+     <div class="mt-10 grid gap-5 md:grid-cols-4">
+      <div class="reveal" data-shown="false" style="transition-delay:0ms">
+       <div class="relative h-full rounded-3xl bg-card p-6 shadow-card">
+        <span class="absolute right-5 top-4 font-display text-5xl font-extrabold text-secondary">
+         1
+        </span>
+        <svg aria-hidden="true" class="lucide lucide-camera h-8 w-8 text-primary" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z">
+         </path>
+         <circle cx="12" cy="13" r="3">
+         </circle>
+        </svg>
+        <p class="mt-4 font-display text-lg font-bold text-forest">
+         Describe it
+        </p>
+        <p class="mt-1 text-sm text-muted-foreground">
+         Pick a category, add a few words and optional photos.
+        </p>
+       </div>
+      </div>
+      <div class="reveal" data-shown="false" style="transition-delay:100ms">
+       <div class="relative h-full rounded-3xl bg-card p-6 shadow-card">
+        <span class="absolute right-5 top-4 font-display text-5xl font-extrabold text-secondary">
+         2
+        </span>
+        <svg aria-hidden="true" class="lucide lucide-users h-8 w-8 text-primary" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
+         </path>
+         <path d="M16 3.128a4 4 0 0 1 0 7.744">
+         </path>
+         <path d="M22 21v-2a4 4 0 0 0-3-3.87">
+         </path>
+         <circle cx="9" cy="7" r="4">
+         </circle>
+        </svg>
+        <p class="mt-4 font-display text-lg font-bold text-forest">
+         Compare offers
+        </p>
+        <p class="mt-1 text-sm text-muted-foreground">
+         Local experts send labour, parts and timeline estimates.
+        </p>
+       </div>
+      </div>
+      <div class="reveal" data-shown="false" style="transition-delay:200ms">
+       <div class="relative h-full rounded-3xl bg-card p-6 shadow-card">
+        <span class="absolute right-5 top-4 font-display text-5xl font-extrabold text-secondary">
+         3
+        </span>
+        <svg aria-hidden="true" class="lucide lucide-truck h-8 w-8 text-primary" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2">
+         </path>
+         <path d="M15 18H9">
+         </path>
+         <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14">
+         </path>
+         <circle cx="17" cy="18" r="2">
+         </circle>
+         <circle cx="7" cy="18" r="2">
+         </circle>
+        </svg>
+        <p class="mt-4 font-display text-lg font-bold text-forest">
+         Pickup or visit
+        </p>
+        <p class="mt-1 text-sm text-muted-foreground">
+         Repair at home, drop off, or schedule pickup &amp; return.
+        </p>
+       </div>
+      </div>
+      <div class="reveal" data-shown="false" style="transition-delay:300ms">
+       <div class="relative h-full rounded-3xl bg-card p-6 shadow-card">
+        <span class="absolute right-5 top-4 font-display text-5xl font-extrabold text-secondary">
+         4
+        </span>
+        <svg aria-hidden="true" class="lucide lucide-receipt h-8 w-8 text-primary" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z">
+         </path>
+         <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8">
+         </path>
+         <path d="M12 17.5v-11">
+         </path>
+        </svg>
+        <p class="mt-4 font-display text-lg font-bold text-forest">
+         Pay what you approved
+        </p>
+        <p class="mt-1 text-sm text-muted-foreground">
+         Get an itemised digital bill listing every recorded part.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mx-auto max-w-7xl px-4 py-20">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+     <div class="reveal" data-shown="false" style="transition-delay:0ms">
+      <h2 class="text-3xl font-extrabold text-forest sm:text-4xl">
+       Featured repair experts
+      </h2>
+      <div class="mt-2">
+       <span class="inline-flex items-center gap-1 rounded-full border border-dashed border-primary/40 px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">
+        <svg aria-hidden="true" class="lucide lucide-info h-3 w-3" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <circle cx="12" cy="12" r="10">
+         </circle>
+         <path d="M12 16v-4">
+         </path>
+         <path d="M12 8h.01">
+         </path>
+        </svg>
+         
+        Illustrative demo profiles
+       </span>
+      </div>
+     </div>
+     <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.97] [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary/20 bg-card text-foreground hover:border-primary hover:bg-secondary h-11 px-5" href="experts.html">
+      See all experts
+      <svg aria-hidden="true" class="lucide lucide-arrow-right" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M5 12h14">
+       </path>
+       <path d="m12 5 7 7-7 7">
+       </path>
+      </svg>
+     </a>
+    </div>
+    <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+     <div class="reveal" data-shown="false" style="transition-delay:0ms">
+      <a class="card-lift block h-full rounded-3xl border bg-card p-5 shadow-card" href="experts/imran.html">
+       <div class="flex items-center gap-3">
+        <div aria-hidden="true" class="grid shrink-0 place-items-center font-display font-bold bg-lime text-lime-foreground h-14 w-14 text-lg rounded-2xl">
+         IS
+        </div>
+        <div class="min-w-0">
+         <p class="truncate font-display font-bold text-forest">
+          Jahiz Sheikh
+         </p>
+         <p class="truncate text-xs text-muted-foreground">
+          Performance cycle specialist
+         </p>
+        </div>
+       </div>
+       <div class="mt-4 flex items-center justify-between">
+        <span class="inline-flex items-center gap-1 text-sm font-semibold">
+         <svg aria-hidden="true" class="lucide lucide-star h-4 w-4 fill-warning text-warning" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+          </path>
+         </svg>
+         4.9
+         <span class="font-normal text-muted-foreground">
+          (
+           
+          301
+           
+          )
+         </span>
+        </span>
+        <span class="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-0.5 text-[11px] font-semibold text-primary" title="Marked verified in this demo">
+         <svg aria-hidden="true" class="lucide lucide-badge-check h-3.5 w-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+          </path>
+          <path d="m9 12 2 2 4-4">
+          </path>
+         </svg>
+         Verified (demo)
+        </span>
+       </div>
+       <p class="mt-3 flex items-center gap-1 text-xs text-muted-foreground">
+        <svg aria-hidden="true" class="lucide lucide-map-pin h-3.5 w-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+         </path>
+         <circle cx="12" cy="10" r="3">
+         </circle>
+        </svg>
+         
+        Indiranagar
+         
+        ,
+         
+        Bengaluru
+       </p>
+       <p class="mt-3 text-sm">
+        Starting from
+        <span class="font-display text-lg font-bold text-primary">
+         ₹350
+        </span>
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:80ms">
+      <a class="card-lift block h-full rounded-3xl border bg-card p-5 shadow-card" href="experts/ananya.html">
+       <div class="flex items-center gap-3">
+        <div aria-hidden="true" class="grid shrink-0 place-items-center font-display font-bold bg-forest text-forest-foreground h-14 w-14 text-lg rounded-2xl">
+         AR
+        </div>
+        <div class="min-w-0">
+         <p class="truncate font-display font-bold text-forest">
+          Ananya Rao
+         </p>
+         <p class="truncate text-xs text-muted-foreground">
+          Phone &amp; laptop board repair
+         </p>
+        </div>
+       </div>
+       <div class="mt-4 flex items-center justify-between">
+        <span class="inline-flex items-center gap-1 text-sm font-semibold">
+         <svg aria-hidden="true" class="lucide lucide-star h-4 w-4 fill-warning text-warning" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+          </path>
+         </svg>
+         4.7
+         <span class="font-normal text-muted-foreground">
+          (
+           
+          263
+           
+          )
+         </span>
+        </span>
+        <span class="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-0.5 text-[11px] font-semibold text-primary" title="Marked verified in this demo">
+         <svg aria-hidden="true" class="lucide lucide-badge-check h-3.5 w-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+          </path>
+          <path d="m9 12 2 2 4-4">
+          </path>
+         </svg>
+         Verified (demo)
+        </span>
+       </div>
+       <p class="mt-3 flex items-center gap-1 text-xs text-muted-foreground">
+        <svg aria-hidden="true" class="lucide lucide-map-pin h-3.5 w-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+         </path>
+         <circle cx="12" cy="10" r="3">
+         </circle>
+        </svg>
+         
+        HSR Layout
+         
+        ,
+         
+        Bengaluru
+       </p>
+       <p class="mt-3 text-sm">
+        Starting from
+        <span class="font-display text-lg font-bold text-primary">
+         ₹450
+        </span>
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:160ms">
+      <a class="card-lift block h-full rounded-3xl border bg-card p-5 shadow-card" href="experts/suresh.html">
+       <div class="flex items-center gap-3">
+        <div aria-hidden="true" class="grid shrink-0 place-items-center font-display font-bold bg-forest text-forest-foreground h-14 w-14 text-lg rounded-2xl">
+         SP
+        </div>
+        <div class="min-w-0">
+         <p class="truncate font-display font-bold text-forest">
+          Suresh Patil
+         </p>
+         <p class="truncate text-xs text-muted-foreground">
+          Kitchen &amp; laundry appliances
+         </p>
+        </div>
+       </div>
+       <div class="mt-4 flex items-center justify-between">
+        <span class="inline-flex items-center gap-1 text-sm font-semibold">
+         <svg aria-hidden="true" class="lucide lucide-star h-4 w-4 fill-warning text-warning" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+          </path>
+         </svg>
+         4.7
+         <span class="font-normal text-muted-foreground">
+          (
+           
+          198
+           
+          )
+         </span>
+        </span>
+        <span class="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-0.5 text-[11px] font-semibold text-primary" title="Marked verified in this demo">
+         <svg aria-hidden="true" class="lucide lucide-badge-check h-3.5 w-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+          </path>
+          <path d="m9 12 2 2 4-4">
+          </path>
+         </svg>
+         Verified (demo)
+        </span>
+       </div>
+       <p class="mt-3 flex items-center gap-1 text-xs text-muted-foreground">
+        <svg aria-hidden="true" class="lucide lucide-map-pin h-3.5 w-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+         </path>
+         <circle cx="12" cy="10" r="3">
+         </circle>
+        </svg>
+         
+        Kothrud
+         
+        ,
+         
+        Pune
+       </p>
+       <p class="mt-3 text-sm">
+        Starting from
+        <span class="font-display text-lg font-bold text-primary">
+         ₹300
+        </span>
+       </p>
+      </a>
+     </div>
+     <div class="reveal" data-shown="false" style="transition-delay:240ms">
+      <a class="card-lift block h-full rounded-3xl border bg-card p-5 shadow-card" href="experts/lakshmi.html">
+       <div class="flex items-center gap-3">
+        <div aria-hidden="true" class="grid shrink-0 place-items-center font-display font-bold bg-secondary text-secondary-foreground h-14 w-14 text-lg rounded-2xl">
+         LD
+        </div>
+        <div class="min-w-0">
+         <p class="truncate font-display font-bold text-forest">
+          Lakshmi Devi
+         </p>
+         <p class="truncate text-xs text-muted-foreground">
+          Tailoring, zips &amp; bag repair
+         </p>
+        </div>
+       </div>
+       <div class="mt-4 flex items-center justify-between">
+        <span class="inline-flex items-center gap-1 text-sm font-semibold">
+         <svg aria-hidden="true" class="lucide lucide-star h-4 w-4 fill-warning text-warning" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+          </path>
+         </svg>
+         4.8
+         <span class="font-normal text-muted-foreground">
+          (
+           
+          244
+           
+          )
+         </span>
+        </span>
+        <span class="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-0.5 text-[11px] font-semibold text-primary" title="Marked verified in this demo">
+         <svg aria-hidden="true" class="lucide lucide-badge-check h-3.5 w-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+          </path>
+          <path d="m9 12 2 2 4-4">
+          </path>
+         </svg>
+         Verified (demo)
+        </span>
+       </div>
+       <p class="mt-3 flex items-center gap-1 text-xs text-muted-foreground">
+        <svg aria-hidden="true" class="lucide lucide-map-pin h-3.5 w-3.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+         </path>
+         <circle cx="12" cy="10" r="3">
+         </circle>
+        </svg>
+         
+        Mylapore
+         
+        ,
+         
+        Chennai
+       </p>
+       <p class="mt-3 text-sm">
+        Starting from
+        <span class="font-display text-lg font-bold text-primary">
+         ₹120
+        </span>
+       </p>
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="bg-forest-gradient py-20 text-forest-foreground">
+    <div class="mx-auto max-w-7xl px-4">
+     <div class="reveal" data-shown="false" style="transition-delay:0ms">
+      <h2 class="max-w-2xl text-3xl font-extrabold sm:text-5xl">
+       Why repairing can be
+       <span class="text-lime">
+        better
+       </span>
+       than replacing
+      </h2>
+     </div>
+     <div class="mt-10 grid gap-5 md:grid-cols-3">
+      <div class="reveal" data-shown="false" style="transition-delay:0ms">
+       <div class="h-full rounded-3xl border border-forest-foreground/15 bg-forest-foreground/5 p-6">
+        <svg aria-hidden="true" class="lucide lucide-wallet h-8 w-8 text-lime" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1">
+         </path>
+         <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4">
+         </path>
+        </svg>
+        <p class="mt-4 font-display text-xl font-bold">
+         Save money
+        </p>
+        <p class="mt-1 text-sm opacity-80">
+         A ₹450 charging-port fix beats a ₹15,000 new phone.
+        </p>
+       </div>
+      </div>
+      <div class="reveal" data-shown="false" style="transition-delay:100ms">
+       <div class="h-full rounded-3xl border border-forest-foreground/15 bg-forest-foreground/5 p-6">
+        <svg aria-hidden="true" class="lucide lucide-recycle h-8 w-8 text-lime" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5">
+         </path>
+         <path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12">
+         </path>
+         <path d="m14 16-3 3 3 3">
+         </path>
+         <path d="M8.293 13.596 7.196 9.5 3.1 10.598">
+         </path>
+         <path d="m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1 1.546.888l3.943 6.843">
+         </path>
+         <path d="m13.378 9.633 4.096 1.098 1.097-4.096">
+         </path>
+        </svg>
+        <p class="mt-4 font-display text-xl font-bold">
+         Less e-waste
+        </p>
+        <p class="mt-1 text-sm opacity-80">
+         Every repair keeps materials out of landfill a little longer.
+        </p>
+       </div>
+      </div>
+      <div class="reveal" data-shown="false" style="transition-delay:200ms">
+       <div class="h-full rounded-3xl border border-forest-foreground/15 bg-forest-foreground/5 p-6">
+        <svg aria-hidden="true" class="lucide lucide-clock h-8 w-8 text-lime" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <circle cx="12" cy="12" r="10">
+         </circle>
+         <path d="M12 6v6l4 2">
+         </path>
+        </svg>
+        <p class="mt-4 font-display text-xl font-bold">
+         Keep what you love
+        </p>
+        <p class="mt-1 text-sm opacity-80">
+         Your broken-in backpack, your favourite cycle — back in action.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 md:grid-cols-2">
+    <div class="reveal" data-shown="false" style="transition-delay:0ms">
+     <img alt="Delivery partner on a scooter carrying a bicycle wheel and phone" class="rounded-[2rem] shadow-lift" height="768" loading="lazy" src="__l5e/assets-v1/fa71430f-4b62-43b0-a2ce-f4ffe3b1697d/pickup.jpg" width="1024"/>
+    </div>
+    <div class="reveal" data-shown="false" style="transition-delay:120ms">
+     <p class="text-xs font-bold uppercase tracking-[0.18em] text-primary">
+      Doorstep pickup &amp; delivery
+     </p>
+     <h2 class="mt-2 text-3xl font-extrabold text-forest sm:text-4xl">
+      We handle the running around.
+     </h2>
+     <p class="mt-4 text-muted-foreground">
+      FixIt coordinates local delivery partners — we don't own a fleet. Your item's condition and accessories are recorded at pickup, the shop confirms receipt, and you follow every step on a tracking timeline.
+     </p>
+     <ul class="mt-6 space-y-3">
+      <li class="flex items-start gap-2">
+       <svg aria-hidden="true" class="lucide lucide-shield-check mt-0.5 h-5 w-5 text-primary" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+        </path>
+        <path d="m9 12 2 2 4-4">
+        </path>
+       </svg>
+        
+       Handover checklist with condition notes &amp; photos
+      </li>
+      <li class="flex items-start gap-2">
+       <svg aria-hidden="true" class="lucide lucide-shield-check mt-0.5 h-5 w-5 text-primary" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+        </path>
+        <path d="m9 12 2 2 4-4">
+        </path>
+       </svg>
+        
+       Shop confirms receipt of your item
+      </li>
+      <li class="flex items-start gap-2">
+       <svg aria-hidden="true" class="lucide lucide-shield-check mt-0.5 h-5 w-5 text-primary" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+        </path>
+        <path d="m9 12 2 2 4-4">
+        </path>
+       </svg>
+        
+       Clear policy for damaged or lost items
+      </li>
+     </ul>
+     <p class="mt-4 text-xs text-muted-foreground">
+      In this prototype, drivers and tracking updates are simulated.
+     </p>
+    </div>
+   </section>
+   <section class="bg-secondary/60 py-20">
+    <div class="mx-auto max-w-7xl px-4">
+     <div class="reveal" data-shown="false" style="transition-delay:0ms">
+      <h2 class="text-3xl font-extrabold text-forest sm:text-4xl">
+       What customers could say
+      </h2>
+      <div class="mt-2">
+       <span class="inline-flex items-center gap-1 rounded-full border border-dashed border-primary/40 px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">
+        <svg aria-hidden="true" class="lucide lucide-info h-3 w-3" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <circle cx="12" cy="12" r="10">
+         </circle>
+         <path d="M12 16v-4">
+         </path>
+         <path d="M12 8h.01">
+         </path>
+        </svg>
+         
+        Illustrative testimonials — not real customers
+       </span>
+      </div>
+     </div>
+     <div class="mt-8 grid gap-5 md:grid-cols-3">
+      <div class="reveal" data-shown="false" style="transition-delay:0ms">
+       <figure class="h-full rounded-3xl bg-card p-6 shadow-card">
+        <blockquote class="font-display text-lg font-semibold text-forest">
+         “
+          
+         My cycle brake was fixed the same day and the bill showed exactly which cable was replaced.
+          
+         ”
+        </blockquote>
+        <figcaption class="mt-4 text-sm text-muted-foreground">
+         —
+          
+         Demo customer, Bengaluru
+        </figcaption>
+       </figure>
+      </div>
+      <div class="reveal" data-shown="false" style="transition-delay:100ms">
+       <figure class="h-full rounded-3xl bg-card p-6 shadow-card">
+        <blockquote class="font-display text-lg font-semibold text-forest">
+         “
+          
+         I loved approving the revised quote before they did extra work. No surprises.
+          
+         ”
+        </blockquote>
+        <figcaption class="mt-4 text-sm text-muted-foreground">
+         —
+          
+         Demo customer, Pune
+        </figcaption>
+       </figure>
+      </div>
+      <div class="reveal" data-shown="false" style="transition-delay:200ms">
+       <figure class="h-full rounded-3xl bg-card p-6 shadow-card">
+        <blockquote class="font-display text-lg font-semibold text-forest">
+         “
+          
+         Pickup and return for my mixer meant I didn't take a single day off work.
+          
+         ”
+        </blockquote>
+        <figcaption class="mt-4 text-sm text-muted-foreground">
+         —
+          
+         Demo customer, Mumbai
+        </figcaption>
+       </figure>
+      </div>
+     </div>
+    </div>
+   </section> -->
+
+
+
+
+
+
+   <section class="mx-auto max-w-7xl px-4 py-20">
+    <div class="relative overflow-hidden rounded-[2.5rem] bg-lime p-10 text-lime-foreground sm:p-14">
+     <div class="absolute -right-10 -top-10 h-56 w-56 rounded-full bg-forest/10">
+     </div>
+     <h2 class="relative max-w-xl text-4xl font-extrabold sm:text-5xl">
+      AI Project by Jahiz, X Asters
+     </h2>
+     <p class="relative mt-3 max-w-lg">
+      Tell us what's broken — it takes under two minutes.
+     </p>
+     <div class="relative mt-8 flex flex-col gap-3 sm:flex-row">
+      <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.97] [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-forest shadow-card h-13 px-7 text-base py-3.5" href="request.html">
+       Find My Repair
+       <svg aria-hidden="true" class="lucide lucide-arrow-right" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12h14">
+        </path>
+        <path d="m12 5 7 7-7 7">
+        </path>
+       </svg>
+      </a>
+      <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.97] [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary/20 bg-card text-foreground hover:border-primary hover:bg-secondary h-13 px-7 text-base py-3.5" href="quick-fix.html">
+       <svg aria-hidden="true" class="lucide lucide-zap" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+        </path>
+       </svg>
+       Get a Quick Fix
+      </a>
+     </div>
+    </div>
+   </section>
+
+   <script>
+    (function(a,f){let l;try{l=JSON.parse(sessionStorage.getItem(a)||"{}")}catch{return}const n=l?.[f||history.state?.__TSR_key];let c=!1;for(const t in n){const e=n[t],o=e?.scrollX,s=e?.scrollY;if(Number.isFinite(o)&&Number.isFinite(s)){if(t==="window")scrollTo(o,s),c=!0;else if(t)try{const r=document.querySelector(t);r&&(r.scrollLeft=o,r.scrollTop=s)}catch{}}}if(c)return;const i=location.hash.slice(1);if(i){const t=history.state?.__hashScrollIntoViewOptions??!0;if(t){const e=document.getElementById(i);e&&e.scrollIntoView(t)}return}scrollTo(0,0)})("tsr-scroll-restoration-v1_3");document.currentScript.remove()
+   </script>
+   <!--/$-->
+  </main>
+  <!-- Site footer: supporting navigation and site information. -->
+  <footer class="bg-forest pb-24 pt-14 text-forest-foreground lg:pb-10">
+   <div class="mx-auto grid max-w-7xl gap-10 px-4 md:grid-cols-[1.4fr_1fr_1fr]">
+    <div>
+     <span class="flex items-center gap-2 font-display text-xl font-extrabold text-forest-foreground">
+      <span class="grid h-9 w-9 place-items-center rounded-xl bg-lime text-lime-foreground shadow-card">
+       <svg aria-hidden="true" class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24">
+        <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z">
+        </path>
+       </svg>
+      </span>
+      FixIt
+     </span>
+     <p class="mt-4 font-display text-2xl font-bold">
+      Don't replace it.
+      <span class="text-lime">
+       Fix it.
+      </span>
+     </p>
+     <p class="mt-2 max-w-sm text-sm opacity-75">
+      Making repairs convenient, affordable, transparent and accessible across India.
+     </p>
+    </div>
+    <div>
+     <p class="mb-3 text-xs font-bold uppercase tracking-widest text-lime">
+      Company
+     </p>
+     <ul class="space-y-2 text-sm">
+      <li>
+       <a class="opacity-80 hover:opacity-100" href="info/about.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="opacity-80 hover:opacity-100" href="info/help.html">
+        Help
+       </a>
+      </li>
+      <li>
+       <a class="opacity-80 hover:opacity-100" href="info/contact.html">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a class="opacity-80 hover:opacity-100" href="info/terms.html">
+        Terms
+       </a>
+      </li>
+      <li>
+       <a class="opacity-80 hover:opacity-100" href="info/privacy.html">
+        Privacy
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <p class="mb-3 text-xs font-bold uppercase tracking-widest text-lime">
+      Partners
+     </p>
+     <ul class="space-y-2 text-sm">
+      <li>
+       <a class="opacity-80 hover:opacity-100" href="become-expert.html">
+        Become a Repair Partner
+       </a>
+      </li>
+      <li>
+       <a class="opacity-80 hover:opacity-100" href="expert.html">
+        Expert dashboard
+       </a>
+      </li>
+      <li>
+       <a class="opacity-80 hover:opacity-100" href="admin.html">
+        Operations (admin)
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <p class="mx-auto mt-10 max-w-7xl px-4 text-xs opacity-60">
+    © 2026 FixIt · Prototype. Experts, reviews, drivers and payments shown are illustrative demo content — no real payments or deliveries are processed.
+   </p>
+  </footer>
+  <nav aria-label="Bottom" class="no-print fixed inset-x-0 bottom-0 z-40 border-t bg-card/95 backdrop-blur lg:hidden">
+   <div class="grid grid-cols-5">
+    <a aria-current="page" class="flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium text-primary active" data-status="active" href="index.html">
+     <span class="grid h-8 w-12 place-items-center rounded-full transition bg-lime text-lime-foreground">
+      <svg aria-hidden="true" class="lucide lucide-house h-5 w-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8">
+       </path>
+       <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+       </path>
+      </svg>
+     </span>
+     Home
+    </a>
+    <a class="flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium text-muted-foreground" href="request.html">
+     <span class="grid h-8 w-12 place-items-center rounded-full transition">
+      <svg aria-hidden="true" class="lucide lucide-wrench h-5 w-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z">
+       </path>
+      </svg>
+     </span>
+     Repair
+    </a>
+    <a class="flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium text-muted-foreground" href="experts.html">
+     <span class="grid h-8 w-12 place-items-center rounded-full transition">
+      <svg aria-hidden="true" class="lucide lucide-search h-5 w-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <path d="m21 21-4.34-4.34">
+       </path>
+       <circle cx="11" cy="11" r="8">
+       </circle>
+      </svg>
+     </span>
+     Experts
+    </a>
+    <a class="flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium text-muted-foreground" href="my-repairs.html">
+     <span class="grid h-8 w-12 place-items-center rounded-full transition">
+      <svg aria-hidden="true" class="lucide lucide-clipboard-list h-5 w-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <rect height="4" rx="1" ry="1" width="8" x="8" y="2">
+       </rect>
+       <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+       </path>
+       <path d="M12 11h4">
+       </path>
+       <path d="M12 16h4">
+       </path>
+       <path d="M8 11h.01">
+       </path>
+       <path d="M8 16h.01">
+       </path>
+      </svg>
+     </span>
+     My Repairs
+    </a>
+    <a class="flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium text-muted-foreground" href="sign-in.html">
+     <span class="grid h-8 w-12 place-items-center rounded-full transition">
+      <svg aria-hidden="true" class="lucide lucide-user h-5 w-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2">
+       </path>
+       <circle cx="12" cy="7" r="4">
+       </circle>
+      </svg>
+     </span>
+     Account
+    </a>
+   </div>
+  </nav>
+  <section aria-atomic="false" aria-label="Notifications alt+T" aria-live="polite" aria-relevant="additions text" tabindex="-1">
+  </section>
+  <script data-tsr-stream-part="">
+   (self.$R=self.$R||{})["tsr"]=[];self.$_TSR={h(){this.hydrated=!0,this.c()},e(){this.streamEnded=!0,this.c()},c(){this.hydrated&&this.streamEnded&&(delete self.$_TSR,delete self.$R.tsr)},p(e){this.initialized?e():this.buffer.push(e)},buffer:[]};$_TSR.router=($R=>$R[0]={manifest:$R[1]={routes:$R[2]={__root__:$R[3]={preloads:$R[4]=["/assets/index-BDPYSxts.js","/assets/link-S7LRuTfm.js","/assets/button-DxFGN_-f.js"],scripts:$R[5]=[$R[6]={attrs:$R[7]={type:"module",async:!0,src:"/assets/index-BDPYSxts.js"}}]},"/":$R[8]={preloads:$R[9]=["/assets/routes-Gls2qw7N.js"]}}},matches:$R[10]=[$R[11]={i:"__root__ ",u:1792505479328,s:"success",ssr:!0},$R[12]={i:"  ",u:1792505479328,s:"success",ssr:!0}]})($R["tsr"]);$_TSR.e();{let s=document.currentScript,p;while((p=s.previousElementSibling)&&p.hasAttribute('data-tsr-stream-part'))p.remove();s.remove()}
+  </script>
+  <script async="" src="assets/index-BDPYSxts.js" type="module">
+  </script>
+  <script>
+   document.currentScript.remove();/*$tsr-stream-boundary*/
+  </script>
+  <aside aria-label="Edit with Lovable" dir="ltr" id="lovable-badge" lang="en" role="complementary">
+   <a aria-label="Edit with Lovable" href="https://lovable.dev/projects/lovp_14xc689zf38ymbjd7y73ssjak4" id="lovable-badge-cta" rel="noopener nofollow" target="_blank">
+    <span id="lovable-badge-text">
+     Edit with
+    </span>
+    <span id="lovable-badge-logo">
+     <svg fill="none" height="16" viewbox="0 0 52 16" width="52" xmlns="http://www.w3.org/2000/svg">
+      <path clip-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" fill="#FCFBF8" fill-rule="evenodd">
+      </path>
+      <path d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z" fill="#FCFBF8">
+      </path>
+      <path clip-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" fill="url(#a)" fill-rule="evenodd">
+      </path>
+      <defs>
+       <radialgradient cx="0" cy="0" gradienttransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientunits="userSpaceOnUse" id="a" r="1">
+        <stop offset=".106" stop-color="#FE7B02">
+        </stop>
+        <stop offset=".394" stop-color="#FE3F21">
+        </stop>
+        <stop offset=".608" stop-color="#F858BC">
+        </stop>
+        <stop offset=".929" stop-color="#575ECF">
+        </stop>
+       </radialgradient>
+      </defs>
+     </svg>
+    </span>
+   </a>
+   <span aria-hidden="true" id="lovable-badge-divider">
+   </span>
+   <button aria-label="Dismiss" id="lovable-badge-close" title="Dismiss" type="button">
+    <svg aria-hidden="true" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+     <path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z">
+     </path>
+    </svg>
+   </button>
+  </aside>
+  <script>
+   (() => {
+		if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+			const badge = document.querySelector('#lovable-badge');
+			if (badge) {
+				badge.style.display = 'none';
+			}
+			return;
+		}
+
+		const closeButton = document.querySelector('#lovable-badge-close');
+		if (closeButton) {
+			closeButton.addEventListener('click', function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				const badge = document.querySelector('#lovable-badge');
+				if (badge) {
+					badge.classList.add('closing');
+					setTimeout(function() {
+						if (badge) {
+							badge.style.display = 'none';
+						}
+					}, 240);
+				}
+			});
+		}
+	})();
+  </script>
+ </body>
+</html>
